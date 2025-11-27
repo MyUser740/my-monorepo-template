@@ -1,0 +1,79 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
+{
+  "name": "Node.js & TypeScript",
+  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  // Features to add to the dev container. More info: https://containers.dev/features.
+  // "features": {},
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  // "forwardPorts": [],
+  // Use 'postCreateCommand' to run commands after the container is created.
+  // "postCreateCommand": "yarn install",
+  // Configure tool-specific properties.
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        // github extensions
+        "vsls-contrib.gistfs",
+        "waderyan.gitblame",
+        "donjayamanne.git-extension-pack",
+        "mhutchie.git-graph",
+        "donjayamanne.githistory",
+        "felipecaputo.git-project-manager",
+        "github.vscode-github-actions",
+        "GitHub.codespaces",
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "GitHub.copilot-labs",
+        "ms-vscode.vscode-github-issue-notebooks",
+        "GitHub.vscode-pull-request-github",
+        "GitHub.remotehub",
+        "codezombiech.gitignore",
+        "eamodio.gitlens",
+        "ziyasal.vscode-open-in-github",
+        // Lens extensions
+        "vincaslt.highlight-matching-tag",
+        "usernamehw.errorlens",
+        // "wix.vscode-import-cost",
+        "naumovs.color-highlight",
+        "bierner.color-info",
+        // Visual extensions
+        "aaron-bond.better-comments",
+        "jeff-hykin.better-shellscript-syntax",
+        "vscode-icons-team.vscode-icons",
+        // InteliliCode extensions
+        "VisualStudioExptTeam.vscodeintellicode",
+        "VisualStudioExptTeam.intellicode-api-usage-examples",
+        "leizongmin.node-module-intellisense",
+        "christian-kohler.npm-intellisense",
+        "christian-kohler.path-intellisense",
+        "bradlc.vscode-tailwindcss",
+        // Testing extensions
+        "Postman.postman-for-vscode",
+        // Linting extensions
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        // Javascript and TypeScript extensions
+        "Tobermory.es6-string-html",
+        "dsznajder.es7-react-js-snippets",
+        // Riple Framework extension
+        "Ripple-TS.ripple-ts-vscode-plugin",
+        // Other extensions
+        "formulahendry.auto-close-tag",
+        "hnw.vscode-auto-open-markdown-preview",
+        "mikestead.dotenv",
+        "EditorConfig.EditorConfig",
+        "ionutvmi.path-autocomplete",
+        "ms-edgedevtools.vscode-edge-devtools",
+        "nrwl.angular-console"
+      ]
+    }
+  }
+  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+  // "remoteUser": "root"
+}
